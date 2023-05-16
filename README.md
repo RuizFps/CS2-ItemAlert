@@ -6,8 +6,8 @@ Enviar notificações no canal do Discord sempre que uma conta receber um novo i
 
 
 <h3>Configuração</h3>
+Você precisa ter Node.js instalado em seu computador.
 Antes de executar o bot, certifique-se de realizar as seguintes configurações:
-
 Preencha o arquivo config.json com as informações necessárias, incluindo os dados de autenticação das contas Steam e as configurações do Discord.
 
 ```
