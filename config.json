@@ -1,13 +1,24 @@
 {
-    "discord": {
-      "token": "TOKEN_DISCORD",
-      "channel_id": "ID_CHANNEL"
-    },
-    "steam": {
-        "username": " ",
-        "password": " ",
-        "shared_secret": " ",
-        "identity_secret": " "
-    } 
+  "steam": {
+    "accounts": [
+      {
+        "username": "steam_username1",
+        "password": "steam_password1",
+        "shared_secret": "steam_shared_secret1",
+        "identity_secret": "steam_identity_secret1",
+        "display_name": "Account 1"
+      },
+      {
+        "username": "steam_username2",
+        "password": "steam_password2",
+        "shared_secret": "steam_shared_secret2",
+        "identity_secret": "steam_identity_secret2",
+        "display_name": "Account 2"
+      }
+    ]
+  },
+  "discord": {
+    "token": "discord_bot_token",
+    "channel_id": "discord_channel_id"
+  }
 }
-  
