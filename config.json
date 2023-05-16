@@ -1,0 +1,13 @@
+{
+    "discord": {
+      "token": "TOKEN_DISCORD",
+      "channel_id": "ID_CHANNEL"
+    },
+    "steam": {
+        "username": " ",
+        "password": " ",
+        "shared_secret": " ",
+        "identity_secret": " "
+    } 
+}
+  
