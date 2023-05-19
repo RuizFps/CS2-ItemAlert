@@ -18,19 +18,16 @@ class newSteamUser {
         
         const steamUser = new SteamUser({ promptSteamGuardCode: false });
         const csgo = new GlobalOffensive(steamUser);
-
-        if(shared_secret)
+        if (!shared_secret)
+            throw new Error("É necessário o Shared Secret da sua conta para continuar!");
+        
             steamUser.logOn({
                 accountName: username,
                 password: password,
                 twoFactorCode: SteamTotp.generateAuthCode(shared_secret),
             });
         
-        if (!shared_secret)
-            steamUser.logOn({
-                accountName: username,
-                password: password,
-            });
+        
         
         csgo.on('connectedToGC', () => console.log(`${username} conectado com o Game Coordinator.`));
 
