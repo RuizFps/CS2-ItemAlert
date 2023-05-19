@@ -15,5 +15,4 @@ for (const conta of config.steam.accounts)
       channelId: config.discord.channel_id,
       client: client
     })
-p
 client.login(config.discord.token);
