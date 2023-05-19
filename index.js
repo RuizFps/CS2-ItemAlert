@@ -11,8 +11,9 @@ for (const conta of config.steam.accounts)
     {
       username: conta.username,
       password: conta.password,
+      shared_secret: conta.shared_secret,
       channelId: config.discord.channel_id,
       client: client
     })
-
+p
 client.login(config.discord.token);
