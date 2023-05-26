@@ -46,7 +46,7 @@ export class newSteamUser {
     SteamClient.on("loggedOn", () => {
       console.log(`Logado como: ${Options.username}`);
 
-      SteamClient.setPersona(EPersonaState.Online);
+      SteamClient.setPersona(1);
       SteamClient.gamesPlayed([730]);
     });
 
