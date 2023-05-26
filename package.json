@@ -1,11 +1,30 @@
 {
   "dependencies": {
+    "@types/globaloffensive": "^2.3.1",
+    "@types/steam-totp": "^2.1.0",
+    "@types/steam-user": "^4.26.4",
     "axios": "^1.4.0",
     "discord.js": "^14.11.0",
     "globaloffensive": "^2.3.0",
+    "prettier": "^2.8.8",
     "steam-market-pricing": "^1.0.4",
     "steam-totp": "^2.1.2",
     "steam-user": "^4.28.3",
-    "steamcommunity": "^3.44.3"
+    "steamcommunity": "^3.44.3",
+    "ts-node": "^10.9.1"
+  },
+  "scripts": {
+    "build": "del /q/f/s dist && cls && tsc -p tsconfig.json && ts-node dist/utils/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "eslint": "^8.41.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "typescript": "*"
   }
 }
