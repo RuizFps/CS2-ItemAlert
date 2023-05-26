@@ -1,5 +1,5 @@
 import { generateAuthCode } from "steam-totp";
-import Steam, { EPersonaState } from "steam-user";
+import Steam from "steam-user";
 import csgo from "globaloffensive";
 import { Client, EmbedBuilder, TextChannel, inlineCode } from "discord.js";
 import { client } from ".";
